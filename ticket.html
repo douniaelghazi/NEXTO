@@ -2,26 +2,43 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Prendre un ticket</title>
+  <title>Nexto - Prendre un ticket</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  <h2>Nexto</h2>
-</header>
-
-<section class="hero">
-  <h1>Choisir un service</h1>
-
-  <div class="cards">
-    <a href="generated.html" class="card">Carte d’identité</a>
-    <a href="generated.html" class="card">Permis de conduire</a>
-    <a href="generated.html" class="card">Certificat</a>
-    <a href="generated.html" class="card">Impôts</a>
+<nav class="navbar">
+  <h2 class="logo">Nexto</h2>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="waiting.html">En attente</a>
+    <a href="admin.html">Admin</a>
   </div>
-
+  <a href="ticket.html" class="btn nav-btn">Prendre un ticket</a>
+</nav>
+<section class="page-card">
+  <h2>Prendre un ticket</h2>
+  <p>Choisissez votre service et récupérez votre ticket instantanément.</p>
+  <form action="generated.html" method="GET" class="input-group">
+    <label>Nom complet<br><input type="text" name="nom" placeholder="Entrez votre nom" required></label>
+    <label>Service<br>
+      <select name="service" required>
+        <option value="Accueil">Accueil</option>
+        <option value="Support technique">Support technique</option>
+        <option value="Comptabilité">Comptabilité</option>
+        <option value="Renseignements">Renseignements</option>
+      </select>
+    </label>
+    <label>Priorité<br>
+      <select name="priorite" required>
+        <option value="Standard">Standard</option>
+        <option value="Urgent">Urgent</option>
+      </select>
+    </label>
+    <button type="submit" class="btn">Émettre un ticket</button>
+  </form>
 </section>
-
+<footer>
+  <p>© 2026 Nexto. Tous droits réservés.</p>
+</footer>
 </body>
 </html>

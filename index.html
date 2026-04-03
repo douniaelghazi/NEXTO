@@ -2,24 +2,150 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Nexto</title>
+  <title>Nexto - Landing Page</title>
   <link rel="stylesheet" href="style.css">
+  <link rel ="icon"href="hero.png">
 </head>
+
 <body>
 
-<header>
-  <h2>Nexto</h2>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="ticket.html">Prendre ticket</a>
-  </nav>
-</header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2 class="logo">Nexto</h2>
+  <div class="nav-links">
+    <a href="#">Accueil</a>
+    <a href="#features">Fonctionnalités</a>
+    <a href="#how">Comment ça marche</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#start" class="btn nav-btn">Commencer</a>
+</nav>
 
-<section class="hero">
-  <h1>Simplifiez la gestion des files d’attente</h1>
-  <p>Prenez votre ticket facilement</p>
-  <a href="ticket.html" class="btn">Prendre un ticket</a>
+<section class="hero-section">
+  <div class="hero-content">
+  <h1>Simplifiez la gestion des files d'attente</h1>
+  <p>Solution moderne pour administrations, réduisez les temps d’attente et améliorez l’expérience usager.</p>
+  <div class="btn-group">
+    <a href="#" class="btn">Prendre un ticket</a>
+    <a href="#" class="btn btn-outline">Voir la démo</a>
+  </div>
+</div>
+
+  <div class="hero-image">
+    <img src="img/bnr.webp" alt="Illustration Nexto">
+  </div>
 </section>
 
-</body>
-</html>
+<!-- FEATURES -->
+<section id="features" class="features">
+  <h2>Fonctionnalités</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Prise de ticket rapide</h3>
+      <p>Interface intuitive pour une prise 
+de ticket en quelques secondes</p>
+      
+    </div>
+    <div class="feature-card">
+      <h3>Affichage en temps réel</h3>
+      <p>Suivez votre position dans la file
+ d'attente en direct</p>
+    </div>
+    <div class="feature-card">
+      <h3>Gestion admin simple</h3>
+      <p>Tableau de bord complet pour
+ gérer toutes les files</p>
+    </div>
+    <div class="feature-card">
+      <h3>Réduction du temps d’attente</h3>
+      <p>Optimisation automatique
+ des flux de clients</p>
+    </div>
+    
+  </div>
+</section>
+
+<section id="how" class="comment2">
+  <h2>Comment ça marche</h2>
+
+  <div class="steps2">
+
+    <div class="step2">
+      <div class="circle2">1</div>
+      <h3>Choisir un service</h3>
+      <p>Sélectionnez le service dont vous avez besoin</p>
+    </div>
+
+    <div class="step2">
+      <div class="circle2">2</div>
+      <h3>Recevoir un numéro</h3>
+      <p>Obtenez votre numéro de ticket instantanément</p>
+    </div>
+
+    <div class="step2">
+      <div class="circle2">3</div>
+      <h3>Attendre son tour</h3>
+      <p>Suivez votre position en temps réel</p>
+    </div>
+
+    <div class="step2">
+      <div class="circle2">4</div>
+      <h3>Être appelé</h3>
+      <p>Recevez une notification quand c'est votre tour</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ADVANTAGES -->
+<section class="advantages">
+  <h2>Avantages</h2>
+
+  <ul>
+    <li>
+      <strong>✔ Gain de temps :</strong>
+      <p>Réduisez considérablement le temps d’attente grâce à une gestion intelligente des files.</p>
+    </li>
+
+    <li>
+      <strong>✔ Organisation efficace :</strong>
+      <p>Structurez facilement les files d’attente et améliorez la fluidité des services.</p>
+    </li>
+
+    <li>
+      <strong>✔ Meilleure expérience usager :</strong>
+      <p>Offrez une expérience moderne et agréable aux utilisateurs avec un système simple et clair.</p>
+    </li>
+  </ul>
+
+</section>
+
+
+<!-- CTA FOOTER -->
+<footer id="contact" class="footer">
+
+  <!-- Logo -->
+  <div class="footer-logo">
+    <h2>Nexto</h2>
+        <p>© 2026 Nexto - Tous droits réservés</p>
+  </div>
+
+
+  <!-- Liens -->
+  <div class="footer-links">
+    <h3>Liens utiles</h3>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#how">Comment ça marche</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Contact -->
+  <div class="footer-contact">
+    <h3>Contact</h3>
+    <p>Email : contact@nexto.com</p>
+    <p>Téléphone : +212 600 000 000</p>
+  </div>
+</footer>

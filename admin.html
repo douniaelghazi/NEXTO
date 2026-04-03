@@ -1,18 +1,37 @@
-<h1>Admin Panel</h1>
-
-<h2>Ticket actuel : B12</h2>
-
-<button>Appeler suivant</button>
-<button>Annuler</button>
-<button>Réinitialiser</button>
-
-<h3>Tickets en attente</h3>
-<ul>
-  <li>B13 - En attente</li>
-  <li>B14 - En attente</li>
-</ul>
-
-<h3>Historique</h3>
-<ul>
-  <li>B10 - Terminé</li>
-</ul>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nexto - Administration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <h2 class="logo">Nexto</h2>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="ticket.html">Prendre un ticket</a>
+    <a href="waiting.html">En attente</a>
+  </div>
+  <a href="admin.html" class="btn nav-btn">Admin</a>
+</nav>
+<section class="page-card">
+  <h2>Interface Admin</h2>
+  <p>Superviser le flux des tickets et gérer les files d'attente.</p>
+  <table>
+    <thead>
+      <tr><th>#</th><th>Nom</th><th>Service</th><th>Status</th><th>Heure</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>001</td><td>Amélie</td><td>Accueil</td><td><span class="status-pill status-active">En cours</span></td><td>09:12</td></tr>
+      <tr><td>002</td><td>Rachid</td><td>Support technique</td><td><span class="status-pill status-pending">En attente</span></td><td>09:15</td></tr>
+      <tr><td>003</td><td>Julie</td><td>Comptabilité</td><td><span class="status-pill status-pending">En attente</span></td><td>09:18</td></tr>
+      <tr><td>004</td><td>Omar</td><td>Renseignements</td><td><span class="status-pill status-error">Retard</span></td><td>09:22</td></tr>
+    </tbody>
+  </table>
+</section>
+<footer>
+  <p>© 2026 Nexto. Tous droits réservés.</p>
+</footer>
+</body>
+</html>
