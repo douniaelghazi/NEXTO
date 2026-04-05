@@ -1,8 +1,9 @@
-/* Réinitialisation */
+* Réinitialisation */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
@@ -10,12 +11,14 @@ body {
     background-color: #f3f4f6; /* Khalfiya rmadia bhal tswira 2 */
     color: #1f2937;
     -webkit-font-smoothing: antialiased;
+    
 }
 
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px 40px 20px;
+   
 }
 
 /* Header */
@@ -53,7 +56,8 @@ nav a:hover {
 }
 
 .admin-badge {
-    background-color: #e5e7eb;
+    background-color: #2563eb;
+    color: #ffffff;
     padding: 5px 10px;
     border-radius: 4px;
 }
@@ -181,9 +185,9 @@ nav a:hover {
 }
 
 .refresh-btn {
-    background-color: #f3f4f6;
-    border: 1px solid #d1d5db;
-    color: #374151;
+    background-color: #2563eb;
+    border: 1px solid #2563eb;
+    color: #ffffff;
     padding: 12px 30px;
     border-radius: 8px;
     font-size: 15px;
@@ -194,8 +198,8 @@ nav a:hover {
 }
 
 .refresh-btn:hover {
-    background-color: #e5e7eb;
-    border-color: #9ca3af;
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
 }
 
 /* Responsive pour téléphone (Mobile) */
@@ -218,4 +222,4 @@ nav a:hover {
     .refresh-btn {
         width: 100%;
     }
-}
+} 
