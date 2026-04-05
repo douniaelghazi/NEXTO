@@ -1,37 +1,174 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Nexto - Administration</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexto - Admin Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-<nav class="navbar">
-  <h2 class="logo">Nexto</h2>
-  <div class="nav-links">
-    <a href="index.html">Accueil</a>
-    <a href="ticket.html">Prendre un ticket</a>
-    <a href="waiting.html">En attente</a>
-  </div>
-  <a href="admin.html" class="btn nav-btn">Admin</a>
-</nav>
-<section class="page-card">
-  <h2>Interface Admin</h2>
-  <p>Superviser le flux des tickets et gérer les files d'attente.</p>
-  <table>
-    <thead>
-      <tr><th>#</th><th>Nom</th><th>Service</th><th>Status</th><th>Heure</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>001</td><td>Amélie</td><td>Accueil</td><td><span class="status-pill status-active">En cours</span></td><td>09:12</td></tr>
-      <tr><td>002</td><td>Rachid</td><td>Support technique</td><td><span class="status-pill status-pending">En attente</span></td><td>09:15</td></tr>
-      <tr><td>003</td><td>Julie</td><td>Comptabilité</td><td><span class="status-pill status-pending">En attente</span></td><td>09:18</td></tr>
-      <tr><td>004</td><td>Omar</td><td>Renseignements</td><td><span class="status-pill status-error">Retard</span></td><td>09:22</td></tr>
-    </tbody>
-  </table>
-</section>
-<footer>
-  <p>© 2026 Nexto. Tous droits réservés.</p>
-</footer>
+
+    <header class="admin-header">
+        <div class="logo-container">
+            <div class="logo-icon">+</div>
+            <div class="logo-text">Nexto</div>
+        </div>
+        <div class="header-title">Admin Panel</div>
+    </header>
+
+    <main class="admin-layout">
+        
+        <div class="left-col">
+            
+            <section class="panel">
+                <h2 class="section-title">INFORMATIONS ACTUELLES</h2>
+                
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="info-label">NUMÉRO ACTUEL</div>
+                        <div class="info-value">A042</div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-label">GUICHET</div>
+                        <div class="info-value">03</div>
+                    </div>
+                </div>
+
+                <h2 class="section-title">ACTIONS</h2>
+                <div class="actions-grid">
+                    <button class="btn btn-black">
+                        <span>→</span> APPELER SUIVANT
+                    </button>
+                    <button class="btn btn-white">
+                        <span>✖</span> ANNULER TICKET
+                    </button>
+                    <button class="btn btn-white">
+                        <span>↻</span> RÉINITIALISER
+                    </button>
+                </div>
+            </section>
+
+            <section class="panel mt-20">
+                <h2 class="section-title">HISTORIQUE - TICKETS TERMINÉS</h2>
+                
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>NUMÉRO</th>
+                            <th>HEURE</th>
+                            <th>GUICHET</th>
+                            <th>STATUT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A041</td>
+                            <td>14:32</td>
+                            <td>03</td>
+                            <td>Terminé</td>
+                        </tr>
+                        <tr>
+                            <td>A040</td>
+                            <td>14:28</td>
+                            <td>02</td>
+                            <td>Terminé</td>
+                        </tr>
+                        <tr>
+                            <td>A039</td>
+                            <td>14:25</td>
+                            <td>01</td>
+                            <td>Terminé</td>
+                        </tr>
+                        <tr>
+                            <td>A038</td>
+                            <td>14:20</td>
+                            <td>03</td>
+                            <td>Terminé</td>
+                        </tr>
+                        <tr>
+                            <td>A037</td>
+                            <td>14:15</td>
+                            <td>02</td>
+                            <td>Terminé</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+
+        <div class="right-col">
+            <section class="panel h-full">
+                <h2 class="section-title">FILE D'ATTENTE</h2>
+                
+                <div class="queue-header">
+                    <span>TICKETS EN ATTENTE</span>
+                    <span class="queue-count">8</span>
+                </div>
+
+                <div class="queue-list">
+                    <div class="queue-card">
+                        <div class="queue-card-top">
+                            <span class="queue-num">A043</span>
+                            <span class="badge-suivant">Suivant</span>
+                        </div>
+                        <div class="queue-time">Temps d'attente: 12 min</div>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-card-top">
+                            <span class="queue-num">A044</span>
+                        </div>
+                        <div class="queue-time">Temps d'attente: 18 min</div>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-card-top">
+                            <span class="queue-num">A045</span>
+                        </div>
+                        <div class="queue-time">Temps d'attente: 24 min</div>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-card-top">
+                            <span class="queue-num">A046</span>
+                        </div>
+                        <div class="queue-time">Temps d'attente: 30 min</div>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-card-top">
+                            <span class="queue-num">A047</span>
+                        </div>
+                        <div class="queue-time">Temps d'attente: 36 min</div>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-card-top">
+                            <span class="queue-num">A048</span>
+                        </div>
+                        <div class="queue-time">Temps d'attente: 42 min</div>
+                    </div>
+                    
+                    <div class="queue-card">
+                        <div class="queue-card-top">
+                            <span class="queue-num">A049</span>
+                        </div>
+                        <div class="queue-time">Temps d'attente: 48 min</div>
+                    </div>
+
+                    <div class="queue-card">
+                        <div class="queue-card-top">
+                            <span class="queue-num">A050</span>
+                        </div>
+                        <div class="queue-time">Temps d'attente: 54 min</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
 </body>
 </html>

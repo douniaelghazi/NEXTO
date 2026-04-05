@@ -542,3 +542,392 @@ td {
     grid-template-columns: 1fr;
   }
 }
+/* HEADER */
+.header {
+  background: #2b2f3a;
+  padding: 15px 30px;
+  color: white;
+}
+
+.logo {
+  margin: 0;
+}
+
+/* SECTION */
+.ticket-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.ticket-section h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.ticket-section p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #eee;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+/* ===== PAGES INTERNES ===== */
+.page-interne {
+  background: var(--bg);
+}
+
+/* HEADER INTERNE */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.logo-icon {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* NAV */
+header nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+header nav a {
+  color: var(--subtitle);
+  font-size: 0.95rem;
+}
+
+header nav a:hover {
+  color: var(--accent);
+}
+
+/* CONTAINERS */
+.container-sm {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* CARD */
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* TEXT */
+.text-center {
+  text-align: center;
+}
+
+/* GRID SERVICES */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* SERVICE CARD */
+.service-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+/* ICON */
+.service-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+/* TITLE */
+.service-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+/* TEXT */
+.service-card p {
+  font-size: 0.9rem;
+  color: var(--subtitle);
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.btn-sm {
+  font-size: 0.85rem;
+  padding: 0.5rem 0.9rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* INFO CARD */
+.card p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
+
+
+
+
+
+/* Réinitialisation */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Khalfiya rmadia bhal tswira 2 */
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 40px;
+}
+
+.logo {
+    color: #2563eb; 
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #111827;
+}
+
+.admin-badge {
+    background-color: #2563eb;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+}
+
+/* Titre principal */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.hero .subtitle {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* Container des cartes (List vertical) */
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Design de la carte (Chkel dyl tswira 1) */
+.option-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between; /* L'icon a gauche, bouton a droite */
+    align-items: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s;
+}
+
+.option-card:hover {
+    border-color: #d1d5db;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Partie gauche de la carte (Icon + Texte) */
+.card-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-box {
+    font-size: 24px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.option-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.option-desc {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* Bouton Prendre un ticket */
+.ticket-btn {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ticket-btn:hover {
+    background-color: #e5e7eb;
+}
+
+/* Info Box en bas */
+.info-box {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+.info-text {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* Responsive pour téléphone (Mobile) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .option-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .ticket-btn {
+        width: 100%; /* Le bouton prend toute la largeur sur tel */
+    }
+}
+
+
+

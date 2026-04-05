@@ -1,0 +1,8 @@
+/* ========================================
+   13. PAGE: TICKET GENERATED
+   ======================================== */
+.ticket-wrapper { max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem; }
+.ticket-display {
+    background: var(--bg-secondary); border-radius: var(--radius-lg); overflow: hidden;
+    box-shadow: var(--shadow-lg); position: relative; border: 1px solid var(--border);
+}

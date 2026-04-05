@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affichage Public - Nexto">
+    <title>Affichage Public - Nexto</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-interne">
+    <header>
+        <div class="container" style="text-align: center; padding: var(--spacing-lg) 0;">
+            <div class="logo" style="display: inline-flex; align-items: center; gap: var(--spacing-sm); font-size: 1.5rem;">
+                <a href="index.html" class="logo">
+        
+        <span>Nexto</span>
+      </a>
+            </div>
+            <h1 style="margin-top: var(--spacing-md); font-size: 2rem;">Affichage des tickets</h1>
+        </div>
+    </header>
+
+    <main>
+        <section style="padding: var(--spacing-3xl) 0;">
+            <div class="container">
+                <div class="display-main">
+                    
+                    <div class="current-ticket-section">
+                        <p class="current-ticket-label">Ticket Appelé</p>
+                        <div class="current-ticket-number" id="current-ticket">B12</div>
+                        <p style="margin-top: var(--spacing-md); font-size: 3rem;">GUICHET 2</p>
+                    </div>
+
+                    <aside class="display-sidebar">
+                        
+                        <div class="sidebar-panel">
+                            <h3>Derniers Appelés</h3>
+                            <ul class="recent-list">
+                                <li class="recent-item">
+                                    <span class="font-bold">B11</span>
+                                    <span class="text-muted">G2</span>
+                                </li>
+                                <li class="recent-item">
+                                    <span class="font-bold">B10</span>
+                                    <span class="text-muted">G2</span>
+                                </li>
+                                <li class="recent-item">
+                                    <span class="font-bold">B09</span>
+                                    <span class="text-muted">G2</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <section>
+                            <div class="container-sm">
+                                <div class="card" style="background-color: var(--primary-light); border-color: var(--primary);">
+                                    <p class="text-center">Veuillez patienter après avoir pris votre ticket</p>
+                                </div>
+                            </div>
+                        </section>
+
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

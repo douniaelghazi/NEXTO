@@ -1,44 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Nexto - Prendre un ticket</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexto - Service Administratif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar">
-  <h2 class="logo">Nexto</h2>
-  <div class="nav-links">
-    <a href="index.html">Accueil</a>
-    <a href="waiting.html">En attente</a>
-    <a href="admin.html">Admin</a>
-  </div>
-  <a href="ticket.html" class="btn nav-btn">Prendre un ticket</a>
-</nav>
-<section class="page-card">
-  <h2>Prendre un ticket</h2>
-  <p>Choisissez votre service et récupérez votre ticket instantanément.</p>
-  <form action="generated.html" method="GET" class="input-group">
-    <label>Nom complet<br><input type="text" name="nom" placeholder="Entrez votre nom" required></label>
-    <label>Service<br>
-      <select name="service" required>
-        <option value="Accueil">Accueil</option>
-        <option value="Support technique">Support technique</option>
-        <option value="Comptabilité">Comptabilité</option>
-        <option value="Renseignements">Renseignements</option>
-      </select>
-    </label>
-    <label>Priorité<br>
-      <select name="priorite" required>
-        <option value="Standard">Standard</option>
-        <option value="Urgent">Urgent</option>
-      </select>
-    </label>
-    <button type="submit" class="btn">Émettre un ticket</button>
-  </form>
-</section>
-<footer>
-  <p>© 2026 Nexto. Tous droits réservés.</p>
-</footer>
+
+    <div class="container">
+        <header>
+            <div class="logo">Nexto</div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                    <a href="waiting.html">File d'Attente</a>
+                    <a href="display.html">Affichage Public</a>
+                    <a href="admin.html" class="btn btn-primary btn-sm">Admin</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>Bienvenue sur Nexto</h1>
+                <p class="subtitle">Prenez un ticket pour votre service administratif</p>
+            </div>
+            
+
+            <div class="options-list">
+                
+                <div class="option-card">
+                    <div class="card-left">
+                        <div class="icon-box">🪪</div>
+                        <div class="text-content">
+                            <span class="option-title">Carte d'identité / Passeport</span>
+                            <span class="option-desc">Demandes et renouvellement</span>
+                        </div>
+                    </div>
+                    <a href="ticket-genere.html" class="ticket-btn">Prendre un ticket</a>
+                </div>
+
+                <div class="option-card">
+                    <div class="card-left">
+                        <div class="icon-box">🚗</div>
+                        <div class="text-content">
+                            <span class="option-title">Permis de conduire</span>
+                            <span class="option-desc">Demandes et renouvellement</span>
+                        </div>
+                    </div>
+                    <a href="ticket-genere.html" class="ticket-btn">Prendre un ticket</a>
+                </div>
+
+                <div class="option-card">
+                    <div class="card-left">
+                        <div class="icon-box">🏠</div>
+                        <div class="text-content">
+                            <span class="option-title">Certificat de résidence</span>
+                            <span class="option-desc">Demandes et renouvellement</span>
+                        </div>
+                    </div>
+                    <a href="ticket-genere.html" class="ticket-btn">Prendre un ticket</a>
+                </div>
+
+                <div class="option-card">
+                    <div class="card-left">
+                        <div class="icon-box">📄</div>
+                        <div class="text-content">
+                            <span class="option-title">Impôts / Taxes</span>
+                            <span class="option-desc">Paiements et renseignements</span>
+                        </div>
+                    </div>
+                    <a href="ticket-genere.html" class="ticket-btn">Prendre un ticket</a>
+                </div>
+
+            </div>
+
+            <div class="info-box">
+                <span class="info-icon">ℹ️</span>
+                <span class="info-text">Veuillez patienter après avoir pris votre ticket</span>
+            </div>
+        </main>
+    </div>
+
 </body>
 </html>

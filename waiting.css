@@ -1,0 +1,221 @@
+/* Réinitialisation */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Khalfiya rmadia bhal tswira 2 */
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #e5e7eb;
+    margin-bottom: 40px;
+}
+
+.logo {
+    color: #2563eb; /* Logo b lzre9 */
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #111827;
+}
+
+.admin-badge {
+    background-color: #e5e7eb;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Titre principal */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.hero .subtitle {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* =========================================================
+   HNA ZEDT L'CSS DYL TABLEAU BACH YMATCHI M3A DESIGN DYALEK
+   ========================================================= */
+
+.table-container {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Bash n7afdo 3la border-radius */
+    margin-bottom: 24px;
+}
+
+.queue-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.queue-table th, 
+.queue-table td {
+    padding: 16px 24px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.queue-table thead tr {
+    background-color: #f9fafb; /* Rmadi mftou7 l'entête */
+}
+
+.queue-table th {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.queue-table tbody tr:last-child td {
+    border-bottom: none; /* N7iydo ster lkhr */
+}
+
+.number {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.service {
+    font-size: 15px;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 90px;
+}
+
+.badge-cours {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.badge-attente {
+    background-color: #f9fafb;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.badge-termine {
+    background-color: #ffffff;
+    color: #9ca3af;
+    border: 1px dashed #d1d5db;
+}
+
+/* Info Box (Temps d'attente) */
+.wait-time-box {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #374151;
+    font-size: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.wait-time-box strong {
+    color: #111827;
+}
+
+/* Bouton Actualiser (M9ad bhal ticket-btn) */
+.action-container {
+    display: flex;
+    justify-content: center;
+}
+
+.refresh-btn {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.refresh-btn:hover {
+    background-color: #e5e7eb;
+    border-color: #9ca3af;
+}
+
+/* Responsive pour téléphone (Mobile) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .queue-table th, 
+    .queue-table td {
+        padding: 12px 15px;
+    }
+    
+    .refresh-btn {
+        width: 100%;
+    }
+}
